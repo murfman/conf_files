@@ -1,51 +1,43 @@
-Xcursor.theme: DMZ-White
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdlight
+Xft.rgba: rgb
 
-URxvt.font:                xft:Inconsolata:pixelsize=18
-URxvt.boldFont:            xft:Inconsolata:pixelsize=18:bold
-URxvt.italicFont:          xft:Inconsolata:pixelsize=18:italic
-URxvt.boldItalicFont:      xft:Inconsolata:pixelsize=18:bold:italic
-URxvt.letterSpace:         -1
+! Solarized color scheme for the X Window System
+!
+! http://ethanschoonover.com/solarized
 
-URxvt*color0:              #101218
-URxvt*color1:              #ee829f
-URxvt*color2:              #a5ffe1
-URxvt*color3:              #ffefcc
-URxvt*color4:              #97bbf7
-URxvt*color5:              #c0b7f9
-URxvt*color6:              #97e0ff
-URxvt*color7:              #d1d4e0
-URxvt*color8:              #7780a1
-URxvt*color9:              #ee829f
-URxvt*color10:             #a5ffe1
-URxvt*color11:             #ffefcc
-URxvt*color12:             #97bbf7
-URxvt*color13:             #c0b7f9
-URxvt*color14:             #97e0ff
-URxvt*color15:             #ffffff
-URxvt*color16:             #f99170
-URxvt*color17:             #fcc09e
-URxvt*color18:             #1f222d
-URxvt*color19:             #252936
-URxvt*color20:             #C0C5CE
-URxvt*color21:             #C9CCDB
-URxvt*background:          #101218
-URxvt*foreground:          #E6EFF7
-URxvt*cursorColor:         #E6EFF7
+! Common
+#define S_yellow  #b58900
+#define S_orange  #cb4b16
+#define S_red     #dc322f
+#define S_magenta #d33682
+#define S_violet  #6c71c4
+#define S_blue    #268bd2
+#define S_cyan    #2aa198
+#define S_green   #859900
 
-URxvt.internalBorder:      0
-URxvt.externalBorder:      0
+! Dark
+#define S_base03  #002b36
+#define S_base02  #073642
+#define S_base01  #586e75
+#define S_base00  #657b83
+#define S_base0   #839496
+#define S_base1   #93a1a1
+#define S_base2   #eee8d5
+#define S_base3   #fdf6e3
 
-URxvt.scrollBar:           false
+! rofi
 
-URxvt*fading:              30
+rofi.color-enabled: true
+!                  bg        border    sep
+rofi.color-window: S_base03, S_base1 , S_base1
+!                  bg        fg        bgalt     hlbg      hlfg
+rofi.color-normal: S_base03, S_base0 , S_base03, S_blue  , S_base2
+rofi.color-active: S_base03, S_yellow, S_base03, S_yellow, S_base2
+rofi.color-urgent: S_base03, S_red   , S_base03, S_red   , S_base2
 
-URxvt.perl-ext-common:     matcher,resize-font,foo,clipboard
-
-URxvt.keysym.F11:          perl:fullscreen:switch
-
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger:  C-Up
-
-URxvt.url-launcher:        /usr/bin/firefox
-URxvt.keysym.M-Delete:     perl:matcher:list
-URxvt.colorUL:             #7780a1
+rofi.font:    inconsolata 12
+rofi.opacity: 80

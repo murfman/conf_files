@@ -51,15 +51,21 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
-bindsym $mod+Shift+d exec rofi-surfraw
 #bindsym $mod+d exec dmenu_run
+
+# Start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4
+bindsym $mod+Shift+d exec rofi-surfraw
+bindsym $mod+Shift+f exec rofi -show drun -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4
+#bindsym $mod+shift+f exec rofi -show run -bg "#FF2b36" -fg "#839496" -bw 4 -eh 1 -font "Roboto Slab 18" -opacity "70" -lines 8 -line-margin 4 -width 100 -padding 160 -terminal terminator
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -185,7 +191,9 @@ bindsym $mod+r mode "resize"
   for_window [class="Lxappearance"] floating enable
   for_window [class="Seahorse"] floating enable
   for_window [class="Pavucontrol"] floating enable
-  for_window [class="Terminator Preferences"] floating enable
+  for_window [title="^Terminator Preferences$"] floating enable
+  # for_window [class="^Firefox$" instance="^Navigator$"] floating enable
+  for_window [class="Skype"] floating enable
 
 # Widow Colours
 #                         border  background text    indicator
@@ -242,12 +250,15 @@ exec_always feh --bg-scale /home/brian/Pictures/Wallpapers/wtf.jpg
 
 # Compton
 exec compton -b -f
+exec dunst
 exec fossamail
 exec dropbox
 exec megasync
 exec cbatticon
 exec volumeicon
 exec google-play-music-desktop-player
+exec --no-startup-id i3-msg '$workspace3; exec terminator; $workspace1'
+exec firefox
 
 # Screen asssignments
 assign [class="^Firefox$"] $workspace1
@@ -255,8 +266,8 @@ assign [class="^Fossamail$"] $workspace2
 assign [class="^Atom$"] $workspace4
 assign [class="^Google Play Music Desktop Player$"] $wp10
 assign [class="^Spotify$"] $wp10
-assign [class="^pcmanfm$"] $wp5
 assign [class="^Pcmanfm$"] $wp5
+assign [class="^Spacefm$"] $wp5
 assign [class="^libreoffice$"] $wp6
 assign [class="^soffice$"] $wp6
 assign [class="^Zathura$"] $wp7
