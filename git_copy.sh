@@ -13,8 +13,9 @@ cp="cp -u"
 echo "*** Copying Files ***"
 
 # Single files
-$cp $h1/src/git_copy.sh $c1 
+$cp $h1/src/git_copy.sh $c1
 $cp $h1/.Xresources $c1
+$cp $h1/Pictures/busy_scrot.png $c1
 
 # Directories
 $cp -r $h1/.config/dunst $c1/config

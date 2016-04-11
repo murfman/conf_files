@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
   for_window [class="Seahorse"] floating enable
   for_window [class="Pavucontrol"] floating enable
   for_window [title="^Terminator Preferences$"] floating enable
-  # for_window [class="^Firefox$" instance="^Navigator$"] floating enable
+  for_window [class="^Firefox$" title="^https://plus.google.com - Hangouts - Mozilla Firefox$"] floating enable
   for_window [class="Skype"] floating enable
 
 # Widow Colours
@@ -250,12 +250,14 @@ exec_always feh --bg-scale /home/brian/Pictures/Wallpapers/wtf.jpg
 
 # Compton
 exec compton -b -f
+
+# Other startups
 exec dunst
 exec fossamail
 exec dropbox
 exec megasync
 exec cbatticon
-exec volumeicon
+# exec volumeicon
 exec google-play-music-desktop-player
 exec --no-startup-id i3-msg '$workspace3; exec terminator; $workspace1'
 exec firefox
@@ -264,15 +266,15 @@ exec firefox
 assign [class="^Firefox$"] $workspace1
 assign [class="^Fossamail$"] $workspace2
 assign [class="^Atom$"] $workspace4
-assign [class="^Google Play Music Desktop Player$"] $wp10
-assign [class="^Spotify$"] $wp10
 assign [class="^Pcmanfm$"] $wp5
 assign [class="^Spacefm$"] $wp5
 assign [class="^libreoffice$"] $wp6
 assign [class="^soffice$"] $wp6
 assign [class="^Zathura$"] $wp7
+assign [class="^Google Play Music Desktop Player$"] $wp10
+assign [class="^Spotify$"] $wp10
 
-# Gaps
+# Gaps mod+ahift+g to alter gaps on the fly...
 gaps inner 7
 gaps outer 7
 
