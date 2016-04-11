@@ -128,7 +128,7 @@ set $workspace4 "4:  Atom"
 set $wp5 "5:  Files"
 set $wp6 "6:  Office"
 set $wp7 "7:  Viewer"
-set $wp10 "10:  Music"
+set $wp10 "10: ♪ Music"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
