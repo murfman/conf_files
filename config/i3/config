@@ -61,9 +61,9 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run
 
 # Start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4
+bindsym $mod+d exec rofi -show run -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4 -font "Inconsolata 15"
 bindsym $mod+Shift+d exec rofi-surfraw
-bindsym $mod+Shift+f exec rofi -show drun -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4
+bindsym $mod+Shift+f exec rofi -show drun -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4 -font "Inconsolata 15"
 #bindsym $mod+shift+f exec rofi -show run -bg "#FF2b36" -fg "#839496" -bw 4 -eh 1 -font "Roboto Slab 18" -opacity "70" -lines 8 -line-margin 4 -width 100 -padding 160 -terminal terminator
 
 # There also is the (new) i3-dmenu-desktop which only displays applications

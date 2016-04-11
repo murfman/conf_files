@@ -2,3 +2,5 @@ rename Desktop
 delete
 new
 newfilw
+open_with 
+open_with vim
