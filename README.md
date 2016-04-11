@@ -6,7 +6,7 @@ ArchBang with the i3 window manager. I'll add in more info here later.
 ## Applications
 
 * [i3 Window Manager](http://i3wm.org)
---* [i3blocks]{}
+  * [i3blocks]{http://vivien.github.io/i3blocks/}
 * [dunst](http://www.knopwob.org/dunst/) - dmenu-like notification system
 * [gsimplcal](https://github.com/dmedvinsky/gsimplecal) - tray calendar
 * [rofi](https://github.com/DaveDavenport/rofi) - dmenu replacement
