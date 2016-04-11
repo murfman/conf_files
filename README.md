@@ -18,7 +18,7 @@ ArchBang with the i3 window manager. I'll add in more info here later.
 * [moc](https://wiki.archlinux.org/index.php/Moc) - light weight music player on cli
 * [terminator](http://gnometerminator.blogspot.com/p/introduction.html) - Terminal
 * [zathura](https://pwmt.org/projects/zathura/) - light weight viewer app
-
+* git_copy - stupid script to do some shit for me. 
 
 
 ### Notes
