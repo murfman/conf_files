@@ -7,7 +7,7 @@ ArchBang with the i3 window manager. I'll add in more info here later.
 
 * [i3 Window Manager](http://i3wm.org)
   * [i3blocks](http://vivien.github.io/i3blocks/) - i3 status replacement
-  * [cbatticon]https://github.com/valr/cbatticon) - battery tray icon
+  * [cbatticon](https://github.com/valr/cbatticon) - battery tray icon
   * [volumeicon](http://softwarebakery.com/maato/volumeicon.html) - volume tray icon, don't really need this since it is handled fine by the script in i3blocks
   * [dunst](http://www.knopwob.org/dunst/) - dmenu-like notification system
   * [gsimplcal](https://github.com/dmedvinsky/gsimplecal) - tray calendar
