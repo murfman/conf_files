@@ -128,6 +128,7 @@ set $workspace4 "4:  Atom"
 set $wp5 "5:  Files"
 set $wp6 "6:  Office"
 set $wp7 "7:  Viewer"
+set $wp8 "8:  Chat"
 set $wp10 "10: ♪ Music"
 
 # switch to workspace
@@ -138,7 +139,7 @@ bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace $wp5
 bindsym $mod+6 workspace $wp6
 bindsym $mod+7 workspace $wp7
-bindsym $mod+8 workspace 8
+bindsym $mod+8 workspace $wp8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace $wp10
 
@@ -150,7 +151,7 @@ bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace $wp5
 bindsym $mod+Shift+6 move container to workspace $wp6
 bindsym $mod+Shift+7 move container to workspace $wp7
-bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+8 move container to workspace $wp8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $wp10
 
@@ -255,12 +256,14 @@ exec compton -b -f
 exec dunst
 exec fossamail
 exec dropbox
+exec insync start
 exec megasync
 exec cbatticon
 # exec volumeicon
 exec google-play-music-desktop-player
 exec --no-startup-id i3-msg '$workspace3; exec terminator; $workspace1'
 exec firefox
+exec skype-electron
 
 # Screen asssignments
 assign [class="^Firefox$"] $workspace1
@@ -269,12 +272,15 @@ assign [class="^Atom$"] $workspace4
 assign [class="^Pcmanfm$"] $wp5
 assign [class="^Spacefm$"] $wp5
 assign [class="^libreoffice$"] $wp6
+assign [class="^libreoffice-calc$"] $wp6
+assign [class="^libreoffice-writer$"] $wp6
 assign [class="^soffice$"] $wp6
 assign [class="^Zathura$"] $wp7
 assign [class="^Google Play Music Desktop Player$"] $wp10
 assign [class="^Spotify$"] $wp10
+assign [class="^Franz$"] $wp8
 
-# Gaps mod+ahift+g to alter gaps on the fly...
+# Gaps mod+shift+g to alter gaps on the fly...
 gaps inner 7
 gaps outer 7
 
