@@ -195,6 +195,7 @@ bindsym $mod+r mode "resize"
   for_window [title="^Terminator Preferences$"] floating enable
   for_window [class="^Firefox$" title="^https://plus.google.com - Hangouts - Mozilla Firefox$"] floating enable
   for_window [class="Skype"] floating enable
+  for_window [instance="Msgcompose"] floating enable
 
 # Widow Colours
 #                         border  background text    indicator
@@ -254,6 +255,7 @@ exec compton -b -f
 
 # Other startups
 exec dunst
+exec nm-applet
 exec fossamail
 exec dropbox
 exec insync start
@@ -279,6 +281,7 @@ assign [class="^Zathura$"] $wp7
 assign [class="^Google Play Music Desktop Player$"] $wp10
 assign [class="^Spotify$"] $wp10
 assign [class="^Franz$"] $wp8
+assign [class="^Skype-Electron$"] $wp8
 
 # Gaps mod+shift+g to alter gaps on the fly...
 gaps inner 7
