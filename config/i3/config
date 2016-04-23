@@ -264,11 +264,12 @@ exec cbatticon
 # exec volumeicon
 exec google-play-music-desktop-player
 exec --no-startup-id i3-msg '$workspace3; exec terminator; $workspace1'
-exec firefox
+exec vivaldi-snapshot
 exec skype-electron
 
 # Screen asssignments
 assign [class="^Firefox$"] $workspace1
+assign [class="^vivaldi-snapshot$"] $workspace1
 assign [class="^Fossamail$"] $workspace2
 assign [class="^Atom$"] $workspace4
 assign [class="^Pcmanfm$"] $wp5
