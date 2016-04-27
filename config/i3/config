@@ -79,8 +79,8 @@ bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
-bindsym $mod+Down focus down
 bindsym $mod+Up focus up
+bindsym $mod+Down focus down
 bindsym $mod+Right focus right
 
 # move focused window
@@ -194,7 +194,7 @@ bindsym $mod+r mode "resize"
   for_window [class="Pavucontrol"] floating enable
   for_window [title="^Terminator Preferences$"] floating enable
   for_window [class="^Firefox$" title="^https://plus.google.com - Hangouts - Mozilla Firefox$"] floating enable
-  for_window [class="Skype"] floating enable
+  #for_window [class="Skype"] floating enable
   for_window [instance="Msgcompose"] floating enable
 
 # Widow Colours
