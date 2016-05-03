@@ -29,6 +29,7 @@ $cp -r $h1/.config/hangups $c1/config
 $cp -r $h1/.moc $c1
 $cp -r $h1/.config/terminator $c1/config
 $cp -r $h1/.config/zathura $c1/config
+$cp -r $h1/.Xresources $c1
 
 
 sleep 2
