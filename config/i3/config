@@ -29,6 +29,7 @@ set $base0C #97e0ff
 set $base0D #97bbf7
 set $base0E #c0b7f9
 set $base0F #fcc09e
+set $base0H #d0ccff
 
 
 
@@ -38,7 +39,9 @@ set $base0F #fcc09e
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 10
+
+font pango:Inconsolata 12
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -61,8 +64,9 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec dmenu_run
 
 # Start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4 -font "Inconsolata 15"
-bindsym $mod+Shift+d exec rofi-surfraw
+# bindsym $mod+d exec rofi -show run -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4 -font "Inconsolata 15"
+bindsym $mod+d exec rofi -show run -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#00b1de" -opacity "80" -line-margin 4 -font "Inconsolata 15"
+# bindsym $mod+Shift+d exec rofi-surfraw
 bindsym $mod+Shift+f exec rofi -show drun -color-enabled -bw 4 -eh 1 -lines 8 -bg "#002b36" -fg "#006e8a" -opacity "80" -line-margin 4 -font "Inconsolata 15"
 #bindsym $mod+shift+f exec rofi -show run -bg "#FF2b36" -fg "#839496" -bw 4 -eh 1 -font "Roboto Slab 18" -opacity "70" -lines 8 -line-margin 4 -width 100 -padding 160 -terminal terminator
 
@@ -79,8 +83,8 @@ bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
-bindsym $mod+Up focus up
 bindsym $mod+Down focus down
+bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
@@ -121,15 +125,19 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1:  Firefox"
+set $workspace1 "1:  Web"
 set $workspace2 "2:  Mail"
 set $wp3 "3:  Terminal"
-set $workspace4 "4:  Atom"
+set $workspace4 "4:  Atom"
 set $wp5 "5:  Files"
 set $wp6 "6:  Office"
 set $wp7 "7:  Viewer"
-set $wp8 "8:  Chat"
+set $wp8 "8:  Chat"
 set $wp10 "10: ♪ Music"
+
+# move workspace to different monitors
+bindsym $mod+Shift+greater move workspace to output right
+bindsym $mod+Shift+less move workspace to output left
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -194,20 +202,22 @@ bindsym $mod+r mode "resize"
   for_window [class="Pavucontrol"] floating enable
   for_window [title="^Terminator Preferences$"] floating enable
   for_window [class="^Firefox$" title="^https://plus.google.com - Hangouts - Mozilla Firefox$"] floating enable
-  #for_window [class="Skype"] floating enable
+  for_window [class="Skype"] floating enable
   for_window [instance="Msgcompose"] floating enable
+  for_window [class="xscreensaver-demo"] floating enable
 
 # Widow Colours
 #                         border  background text    indicator
-  client.focused          $base01 $base01    $base07 $base0F
-  client.focused_inactive $base02 $base02    $base03 $base0F
-  client.unfocused        $base02 $base02    $base03 $base0F
+  client.focused          $base01 $base01    $base0H $base0F
+  client.focused_inactive $base02 $base02    $base0A $base0F
+  client.unfocused        $base02 $base02    $base0A $base0F
   client.urgent           $base02 $base08    $base00 $base0F
 
 
   # Bar
     bar {
       font pango:DejaVu Sans Mono 10
+      ## font pango:Inconsolata 12
       status_command i3blocks -c /home/brian/.config/i3/i3blocks.conf
       position bottom
       # strip_workspace_numbers yes
@@ -221,7 +231,7 @@ bindsym $mod+r mode "resize"
   #                        border  background text
         focused_workspace  $base01 $base01    $base07
         active_workspace   $base01 $base02    $base03
-        inactive_workspace $base01 $base01    $base03
+        inactive_workspace $base01 $base01    $base0H
         urgent_workspace   $base01 $base01    $base08
       }
     }
@@ -248,7 +258,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # wallpaper setting
-exec_always feh --bg-scale /home/brian/Pictures/Wallpapers/wtf.jpg
+exec_always feh --bg-scale /home/brian/Pictures/wtf.jpg
 
 # Compton
 exec compton -b -f
@@ -256,27 +266,30 @@ exec compton -b -f
 # Other startups
 exec dunst
 exec nm-applet
-exec fossamail
-exec dropbox
+exec thunderbird
+exec dropbox start
 exec insync start
 exec megasync
-exec cbatticon
-# exec volumeicon
+# exec cbatticon
+exec volumeicon
 exec google-play-music-desktop-player
 exec --no-startup-id i3-msg '$workspace3; exec terminator; $workspace1'
-exec firefox
-exec skype-electron
+exec vivaldi
+exec skype
+exec synergy
 
 # Screen asssignments
 assign [class="^Firefox$"] $workspace1
-assign [class="^vivaldi-snapshot$"] $workspace1
+assign [instance="^vivaldi-stable$"] $workspace1
 assign [class="^Fossamail$"] $workspace2
 assign [class="^Atom$"] $workspace4
 assign [class="^Pcmanfm$"] $wp5
 assign [class="^Spacefm$"] $wp5
+assign [class="^File-roller$"] $wp5
 assign [class="^libreoffice$"] $wp6
 assign [class="^libreoffice-calc$"] $wp6
 assign [class="^libreoffice-writer$"] $wp6
+assign [instance="^libreoffice$"] $wp6
 assign [class="^soffice$"] $wp6
 assign [class="^Zathura$"] $wp7
 assign [class="^Google Play Music Desktop Player$"] $wp10
@@ -285,7 +298,7 @@ assign [class="^Franz$"] $wp8
 assign [class="^Skype-Electron$"] $wp8
 
 # Gaps mod+shift+g to alter gaps on the fly...
-gaps inner 7
+gaps inner 20
 gaps outer 7
 
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -296,7 +309,7 @@ bindsym $mod+Shift+g mode "$mode_gaps"
 mode "$mode_gaps" {
         bindsym o      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
+      bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 

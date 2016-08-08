@@ -278,7 +278,7 @@ MOCDir = ~/.moc
 #             Fastdir3 = /mp3/rap
 #             Fastdir4 = /mp3/etc
 #
-#Fastdir1 =
+Fastdir1 = /media/brian/Extra/Music
 #Fastdir2 =
 #Fastdir3 =
 #Fastdir4 =

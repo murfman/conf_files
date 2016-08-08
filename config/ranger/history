@@ -1,10 +1,1 @@
-rename Desktop
-delete
-new
-newfilw
-open_with vim
-extracthere
-rename Mon_Apr_11_16:46:15_2016.jpg
-shell 
-find 
-open_with 
+open_with ebook-viewer
