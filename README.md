@@ -23,7 +23,12 @@ ArchBang with the i3 window manager. I'll add in more info here later.
 * [franz](http://www.meetfranz.com) - chat app wrapper, not certain I'll use this to be fair
 * git_copy - stupid script to do some shit for me.
 
-![wallpaper](./wtf.jpg "Wallpaper")
+
+![new wallpaper](./ocean_waves.jpg "New Wallpaper")
+This is the new wallpaper from [Tobias van Schneider](https://unsplash.com/@vanschneider?photo=tmp3sxAl-DI)
+My old Wallpaper is [here](./wtf.jpg).
+
+
 
 ### Notes
 Most of these were installed in Arch via the AUR, including the git locations for some of the above if I want to implement in a separate distro.

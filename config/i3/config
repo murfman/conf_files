@@ -286,7 +286,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # wallpaper setting
-exec_always feh --bg-scale /home/brian/Pictures/wtf.jpg
+# exec_always feh --bg-scale /home/brian/Pictures/wtf.jpg
+exec_always feh --bg-scale /home/brian/Pictures/ocean_waves.jpg
 
 # Compton
 exec compton -b -f
