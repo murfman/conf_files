@@ -277,7 +277,7 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
@@ -322,6 +322,7 @@ assign [class="^libreoffice-writer$"] $wp6
 assign [instance="^libreoffice$"] $wp6
 assign [class="^soffice$"] $wp6
 assign [class="^Zathura$"] $wp7
+assign [class="comix"] $wp7
 assign [class="^Google Play Music Desktop Player$"] $wp10
 assign [class="^Spotify$"] $wp10
 assign [class="^Franz$"] $wp8
