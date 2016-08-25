@@ -39,16 +39,17 @@ sleep 2
 # Git Operations
 echo "*** Starting Git Stuff Now @ $(date) ***"
 cd $h1/src/conf_files
+git checkout desktop
 git add .
 sleep 1
 
 # # Git commit Function
 read -p "Enter the commit note (keep it brief)  " note
-git commit -m "$note"
+git commit -a -m "$note"
 sleep 2
 
 # # Git Push Command
-git push origin master
+git push origin desktop
 sleep 3
 
 # Finishing up
