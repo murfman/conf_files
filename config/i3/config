@@ -288,6 +288,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # wallpaper setting
 # exec_always feh --bg-scale /home/brian/Pictures/wtf.jpg
 exec_always feh --bg-scale /home/brian/Pictures/ocean_waves.jpg
+exec_always feh --bg-scale /home/brian/Pictures/wallpaper2.jpg
 
 # Compton
 exec compton -b -f
