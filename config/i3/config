@@ -295,24 +295,27 @@ exec compton -b -f
 # Other startups
 exec dunst
 exec nm-applet
-exec thunderbird
+#exec thunderbird
 exec dropbox start
 exec insync start
 exec megasync
-# exec cbatticon
+exec cbatticon
 exec volumeicon
-exec google-play-music-desktop-player
+#exec google-play-music-desktop-player
 exec --no-startup-id i3-msg '$workspace3; exec terminator; $workspace1'
-exec vivaldi
-exec skype
+exec vivaldi-snapshot
+#exec skype
 exec synergy
 exec xscreensaver --no-splash
+exec franz
 
 # Screen asssignments
 assign [class="^Firefox$"] $workspace1
-assign [instance="^vivaldi-stable$"] $workspace1
+assign [instance="^vivaldi-snapshot$"] $workspace1
 assign [class="^Fossamail$"] $workspace2
+assign [instance="^Thunderbird$"] $workspace2
 assign [class="^Atom$"] $workspace4
+assign [class="sublime_text"] $workspace4
 assign [class="^Pcmanfm$"] $wp5
 assign [class="^Spacefm$"] $wp5
 assign [class="^File-roller$"] $wp5
