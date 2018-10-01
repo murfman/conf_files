@@ -4,14 +4,17 @@
 # documentation.  Do NOT add them all here, or you may end up with defunct
 # commands when upgrading ranger.
 
-# You always need to import ranger.api.commands here to get the Command class:
-from ranger.api.commands import *
-
 # A simple command for demonstration purposes follows.
-#------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+
+from __future__ import (absolute_import, division, print_function)
 
 # You can import any python module as needed.
 import os
+
+# You always need to import ranger.api.commands here to get the Command class:
+from ranger.api.commands import Command
+
 
 # Any class that is a subclass of "Command" will be integrated into ranger as a
 # command.  Try typing ":my_edit<ENTER>" in ranger!
@@ -52,19 +55,13 @@ class my_edit(Command):
 
     # The tab method is called when you press tab, and should return a list of
     # suggestions that the user will tab through.
-    def tab(self):
+    # tabnum is 1 for <TAB> and -1 for <S-TAB> by default
+    def tab(self, tabnum):
         # This is a generic tab-completion function that iterates through the
         # content of the current directory.
         return self._tab_directory_content()
 
-class empty(Command):
-    """:empty
 
-    Empties the trash directory ~/.Trash
-    """
-
-    def execute(self):
-        self.fm.run("rm -rf /home/myname/.Trash/{*,.[^.]*}")
 
 import os
 from ranger.core.loader import CommandLoader
