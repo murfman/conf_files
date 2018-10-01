@@ -22,6 +22,7 @@ $cp $h1/Pictures/ocean_waves.jpg $c1
 # Directories
 $cp -r $h1/.config/dunst $c1/config
 $cp -r $h1/.config/i3 $c1/config
+$cp -r $h1/.i3 $c1/config
 $cp -r $h1/.config/gsimplecal $c1/config
 $cp -r $h1/.config/rofi-surfraw $c1/config
 $cp -r $h1/.config/surfraw $c1/config
