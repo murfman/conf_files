@@ -25,7 +25,6 @@ ArchBang with the i3 window manager. I'll add in more info here later.
 
 
 ![new wallpaper](./hulk_wolverine.jpg "New Wallpaper")
-This is the new wallpaper from [Tobias van Schneider](https://unsplash.com/@vanschneider?photo=tmp3sxAl-DI)
 
 My old wallpaper is [here](.ocean_waves.jpg").
 My even older Wallpaper is [here](./wtf.jpg).
