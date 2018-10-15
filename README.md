@@ -3,7 +3,7 @@
 This is just some of the config files that I am using currently on
 ArchBang with the i3 window manager. I'll add in more info here later.
 
-![busy screenshot](./busy_scrot1.png "Busy Screenshot")
+![busy screenshot](./busy_scrot2.png "Busy Screenshot")
 ![clean screenshot](./clean_scrot1.png "Clean Screenshot")
 
 ## Applications
