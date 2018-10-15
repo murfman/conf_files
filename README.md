@@ -3,7 +3,7 @@
 This is just some of the config files that I am using currently on
 ArchBang with the i3 window manager. I'll add in more info here later.
 
-![busy screenshot](./busy_scrot.png "Busy Screenshot")
+![busy screenshot](./busy_scrot1.png "Busy Screenshot")
 
 ## Applications
 
@@ -24,9 +24,11 @@ ArchBang with the i3 window manager. I'll add in more info here later.
 * git_copy - stupid script to do some shit for me.
 
 
-![new wallpaper](./ocean_waves.jpg "New Wallpaper")
+![new wallpaper](./hulk_wolverine.jpg "New Wallpaper")
 This is the new wallpaper from [Tobias van Schneider](https://unsplash.com/@vanschneider?photo=tmp3sxAl-DI)
-My old Wallpaper is [here](./wtf.jpg).
+
+My old wallpaper is [here](.ocean_waves.jpg").
+My even older Wallpaper is [here](./wtf.jpg).
 
 
 
