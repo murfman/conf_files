@@ -1,0 +1,15 @@
+nitrogen
+termite
+wmnd
+ipager
+nitrogen --restore
+compton -b --config ~/.compton.conf
+inync start
+dropbox start
+nm-applet
+pavucontrol
+arandr
+surf weirdworks.slack.com
+i3lock -c 000000
+keepasssxc
+keepassxc

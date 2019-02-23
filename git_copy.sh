@@ -18,6 +18,9 @@ $cp $h1/.Xresources $c1
 $cp $h1/Pictures/busy_scrot.png $c1
 $cp $h1/Pictures/Wallpapers/wtf.jpg $c1
 $cp $h1/Pictures/ocean_waves.jpg $c1
+$cp $h1/.zshrc $c1
+$cp $h1/.zshrc.pre-oh-my-zsh $c1
+$cp $h1/.vimrc $c1
 
 # Directories
 $cp -r $h1/.config/dunst $c1/config
@@ -33,7 +36,7 @@ $cp -r $h1/.config/terminator $c1/config
 $cp -r $h1/.config/zathura $c1/config
 $cp -r $h1/.Xresources $c1
 $cp -r $h1/.moc/config $c1/moc/config
-
+$cp -r $h1/.fluxbox $c1
 
 sleep 2
 
