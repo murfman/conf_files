@@ -16,8 +16,8 @@ unclutter -idle 2 &
 # wmsmixer -w &
 # idesk &
 nm-applet &
-#nitrogen --restore &
-exec ~/fehbg &
+nitrogen --restore &
+# exec ~/fehbg &
 dropbox start &
 insync start &
 nextcloud &

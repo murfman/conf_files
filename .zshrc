@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/brian/.oh-my-zsh"
@@ -101,7 +101,8 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias neofetch1="neofetch --backend w3m --source ~/Dropbox/Public/murf-avatar.jpg --xoffset 5 --yoffset 5"
-# alias screenshot="scrot '%Y-%m-%d_$wx$h.png' -z -e 'mv $f ~/Pictures/shots/' "
+alias neoshot="neofetch --backend w3m --source ~/Dropbox/Public/murf-avatar.jpg --xoffset 5 --yoffset 5 && scrot '%Y-%m-%d_$wx$h.png' -z -e 'mv $f ~/Pictures/shots/$f' "
+alias screenshot="scrot '%Y-%m-%d_$wx$h.png' -z -e 'mv $f ~/Pictures/shots/' "
 alias clock='tty-clock -c -C4'
 alias more=less
 alias df="df -h"
@@ -111,6 +112,7 @@ alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias sickgear="sudo -u sickgear python2 /opt/sickgear/app/sickgear.py -q --daemon --nolaunch --datadir=/opt/sickgear/data"
+alias cmatrix="cmatrix -C blue -b"
 
 function pdfpextr()
 {

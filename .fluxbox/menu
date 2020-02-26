@@ -5,9 +5,9 @@
 [begin] (Fluxbox)
 [encoding] {UTF-8}
   [exec] (File Manager) {pcmanfm}
-  [exec] (Terminal) {xterm}
-  [exec] (Web Browser) {chromium}
-  [exec] (Run command) {fbrun}
+  [exec] (Terminal) {terminator}
+  [exec] (Web Browser) {waterfox}
+  [exec] (Run command) {rofi -show combi}
 [separator]
 [submenu] (Accessories)
   [exec] (About Xfce) {xfce4-about}
@@ -44,6 +44,7 @@
   [exec] (Kvantum Manager) {kvantummanager}
   [exec] (KWrite) {kwrite}
   [exec] (Latte) {latte-dock}
+  [exec] (Leafpad) {leafpad}
   [exec] (Mousepad) {mousepad}
   [exec] (Neovim) {xterm -e 'nvim'}
   [exec] (Nextcloud desktop sync client) {nextcloud}
@@ -85,6 +86,7 @@
   [exec] (Qt4 Designer) {designer-qt4}
   [exec] (Qt4 Linguist) {linguist-qt4}
   [exec] (Qt4 QDbusViewer) {qdbusviewer-qt4}
+  [exec] (Scene Builder 10) {/opt/SceneBuilder-10/SceneBuilder}
   [exec] (Umbrello) {umbrello5}
 [end]
 [submenu] (Education)
@@ -122,6 +124,7 @@
   [exec] (GNU Backgammon) {gnubg}
   [exec] (GoPanda2) {/opt/gopanda/GoPanda2}
   [exec] (Granatier) {granatier}
+  [exec] (Gweled) {gweled}
   [exec] (Kajongg) {kajongg}
   [exec] (Kanagram) {kanagram}
   [exec] (Kapman) {kapman}
@@ -156,7 +159,7 @@
   [exec] (KSudoku) {ksudoku -qwindowicon ksudoku -qwindowtitle}
   [exec] (Kubrick) {kubrick}
   [exec] (LSkat) {lskat}
-  [exec] (Minecraft Launcher) {/opt/minecraft-launcher/minecraft-launcher.sh}
+  [exec] (Minecraft Launcher) {/opt/minecraft-launcher/minecraft-launcher}
   [exec] (Minecraft) {minecraft}
   [exec] (Naval Battle) {knavalbattle -qwindowtitle}
   [exec] (Palapeli) {palapeli}
@@ -196,11 +199,11 @@
   [exec] (Kwave Sound Editor) {kwave}
   [exec] (mpv Media Player) {mpv --player-operation-mode=pseudo-gui --}
   [exec] (MuseScore 3) {mscore}
-  [exec] (OBS) {obs}
+  [exec] (OBS Studio) {obs}
   [exec] (PulseAudio Volume Control) {pavucontrol}
   [exec] (Qt V4L2 test Utility) {qv4l2}
   [exec] (Qt V4L2 video capture utility) {qvidcap}
-  [exec] (QtWebFlix) {/usr/bin/qtwebflix --disable-seccomp-filter-sandbox --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so; application/x-ppapi-widevine-cdm"}
+  [exec] (QtWebFlix) {/usr/bin/qtwebflix --disable-seccomp-filter-sandbox}
   [exec] (Sound Recorder) {gnome-sound-recorder}
   [exec] (Spotify) {spotify}
   [exec] (VLC media player) {/usr/bin/vlc --started-from-file}
@@ -237,7 +240,8 @@
   [exec] (Mail Reader) {exo-open --launch MailReader}
   [exec] (Pale Moon) {palemoon}
   [exec] (PIM Setting Exporter) {pimsettingexporter}
-  [exec] (QtWebFlix) {/usr/bin/qtwebflix --disable-seccomp-filter-sandbox --register-pepper-plugins="/usr/lib/qt/plugins/ppapi/libwidevinecdmadapter.so; application/x-ppapi-widevine-cdm"}
+  [exec] (QtWebFlix) {/usr/bin/qtwebflix --disable-seccomp-filter-sandbox}
+  [exec] (qutebrowser) {qutebrowser}
   [exec] (Sieve Editor) {sieveeditor}
   [exec] (Skype Preview) {/usr/bin/skypeforlinux}
   [exec] (Slack) {env LD_PRELOAD=/usr/lib/libcurl.so.3 /usr/bin/slack}
@@ -247,6 +251,7 @@
   [exec] (Vivaldi) {/usr/bin/vivaldi-stable}
   [exec] (Waterfox) {waterfox}
   [exec] (Web Browser) {exo-open --launch WebBrowser}
+  [exec] (Youtube-dl GUI) {youtube-dl-gui}
 [end]
 [submenu] (Office)
   [exec] (Adobe Reader 9) {acroread}
@@ -278,8 +283,10 @@
   [exec] (Zathura) {zathura}
 [end]
 [submenu] (Other)
+  [exec] (GitBook Editor) {/opt/gitbook-editor/editor}
   [exec] (Help) {khelpcenter}
   [exec] (hp-uiscan) {/usr/bin/hp-uiscan}
+  [exec] (Manuskript) {manuskript}
 [end]
 [submenu] (Settings)
   [exec] (Add/Remove Software) {pamac-manager}
@@ -297,6 +304,7 @@
   [exec] (Login Window) {pkexec lightdm-settings}
   [exec] (Manjaro Notifier Settings) {msm_notifier --settings}
   [exec] (Manjaro Settings Manager) {manjaro-settings-manager}
+  [exec] (OpenJDK Java 10 Policy Tool) {/usr/lib/jvm/java-10-openjdk/bin/policytool}
   [exec] (OpenJDK Java 11 Policy Tool) {/usr/lib/jvm/java-11-openjdk/bin/policytool}
   [exec] (Power Manager) {xfce4-power-manager-settings}
   [exec] (Preferred Applications) {exo-preferred-applications}
@@ -313,6 +321,7 @@
   [exec] (Avahi Zeroconf Browser) {/usr/bin/avahi-discover}
   [exec] (BleachBit) {bleachbit}
   [exec] (Computer) {gio open computer:///}
+  [exec] (conky) {conky --daemonize --pause=1}
   [exec] (Control Center) {dbus-send --print-reply --dest=com.deepin.dde.ControlCenter /com/deepin/dde/ControlCenter com.deepin.dde.ControlCenter.Show}
   [exec] (Deepin Terminal) {deepin-terminal}
   [exec] (Discover) {plasma-discover}
@@ -335,6 +344,8 @@
   [exec] (Manage Printing) {/usr/bin/xdg-open http://localhost:631/}
   [exec] (Manjaro Hello) {/usr/bin/manjaro-hello}
   [exec] (Multitasking View) {dbus-send --session --dest=com.deepin.wm --print-reply /com/deepin/wm com.deepin.wm.PerformAction int32:1}
+  [exec] (OpenJDK Java 10 Console) {/usr/lib/jvm/java-10-openjdk/bin/jconsole}
+  [exec] (OpenJDK Java 10 Shell) {xterm -e '/usr/lib/jvm/java-10-openjdk/bin/jshell'}
   [exec] (OpenJDK Java 11 Console) {/usr/lib/jvm/java-11-openjdk/bin/jconsole}
   [exec] (OpenJDK Java 11 Shell) {xterm -e '/usr/lib/jvm/java-11-openjdk/bin/jshell'}
   [exec] (Print Settings) {system-config-printer}
